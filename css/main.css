@@ -1,0 +1,444 @@
+/* 공통 css */
+.tit-wrap h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.tit-wrap p {
+    font-size: 1rem;
+    color:lightgray;
+    margin-bottom: 45px;
+}
+
+.upbtn {
+    position: fixed;
+    top: 90%; right: 2%; 
+    width: 40px; height: 40px;
+    background-color: black;
+    border-radius: 3px;
+    z-index: 2;
+    cursor:pointer;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+/* header */
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+header .header-wrap {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+
+}
+header .header-wrap .logo {
+    margin-bottom: 14px;
+}
+header .header-wrap .logo img { width: 70px;}
+header .header-wrap .nav {
+    display: flex;
+    margin-top: 10px;
+}
+header .header-wrap .nav li {
+    padding: 0 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+/* header-mobile */
+.header-mobile {
+    display: none;
+}
+html.open {
+    overflow: hidden;
+  }
+  
+#menu.open {
+    left: 0px;
+}
+  
+.page_cover.open {
+    display: block;
+}
+  
+.btn {
+    font-size: 40px;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    z-index: 1;
+    cursor: pointer;
+    color: white;
+}
+  
+.close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    cursor: pointer;
+    /* color: yellow; */
+    font-size: 1.5rem;
+}
+.close:hover {
+    color: #ffb700;
+}
+  
+#menu {   
+    width: 150px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: -202px;
+    z-index: 20;
+    border: 1px solid #c9c9c9;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    transition: All 0.2s ease;
+    -webkit-transition: All 0.2s ease;
+    -moz-transition: All 0.2s ease;
+    -o-transition: All 0.2s ease;
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 40px;
+}
+  
+#menu a{
+   padding:0;
+   text-decoration: none;
+   font-size: 18px;
+   color: black;
+   display: block;
+   transition: 0.3s;
+}
+  
+#menu.open {
+    left: 0px;
+}
+  
+.page_cover.open {
+    display: block;
+}
+  
+.page_cover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 4;
+    display: none;
+}
+  
+ #menu ul { 
+    width:190px; 
+    margin:0; 
+    padding:0;
+}
+      
+#menu ul.nav li {
+    position:relative; 
+    float:left; 
+    width:100%; 
+    list-style-type:none; 
+    font-size:18px;
+}
+      
+#menu ul.nav li a {
+    display:block; 
+    width:100%; 
+    height:100%; 
+    line-height:50px; 
+    text-indent:20px;
+    text-align: left;
+    color:black; 
+    font-weight:bold; 
+    text-decoration:none;
+}
+      
+#menu ul.nav li a:hover {
+    background:#eee;
+}
+      
+#menu ul.nav li .sub_mobile a {
+    position:relative;
+    float:left;
+    display:block;
+    width:100%;
+    z-index:999;
+    background:#ccc;
+}
+  
+#menu ul.nav li .sub_mobile a:hover {
+      background:#ffb700;
+      color:#fff;
+      z-index:999;
+}
+
+.visual-wrap {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.visual-wrap .visual {
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+}
+.visual-wrap .swiper-slide img {
+    width: 100%;
+}
+.visual-wrap .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+}
+.visual-wrap .visual-img01 {
+    background: url(https://www.hilightbrands-kodak.co.kr/KODAK/25SS/promotion/0418_kids/main_pc.jpg)no-repeat center;
+    background-size: cover;
+}
+.visual-wrap .visual-img02 {
+    background: url(https://www.hilightbrands-kodak.co.kr/KODAK/25SS/promotion/0321_KIM/main_pc_1.jpg)no-repeat center;
+    background-size: cover;
+}
+.visual-wrap .visual-img03 {
+    background: url(https://www.hilightbrands-kodak.co.kr/KODAK/25SS/promotion/0411_breeze/main_pc.jpg?v2)no-repeat center;
+    background-size: cover;
+}
+
+.content-wrap {
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 50px 0; 
+    text-align: center;
+    overflow: hidden;
+}
+.content-wrap .best-item .best {
+    position:relative;
+}
+.content-wrap .best-item .best .swiper-slide img {
+    width: 90%;
+}
+.content-wrap .best-item .best .swiper-slide:hover {
+    transform: scale(1.1);
+    transition: 0.8s ease;
+}
+.content-wrap .best-item .best .swiper-slide .prd-tit {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 10px 0;
+}
+.content-wrap .best-item .best .swiper-slide .pri {
+    text-align: center;
+    font-size: 0.7rem;
+    margin: 10px 0;
+    font-weight: 600;
+}
+.best .swiper-button-prev {
+    background: url(https://www.hilightbrands-kodak.co.kr/skin-skin1/layout/basic/img/mainpage/prev.png)no-repeat;
+    background-size: 50%;
+}
+.best .swiper-button-next {
+    background: url(https://www.hilightbrands-kodak.co.kr/skin-skin1/layout/basic/img/mainpage/next.png)no-repeat;
+    background-size: 50%;
+}
+.best .swiper-button-prev::after,
+ .best .swiper-button-next::after {
+    display: none;
+}
+.content-wrap .best-item .view {
+    padding: 0 20px;
+    margin-top: 40px;
+    display: inline-block;
+    border: 1px solid lightgray;
+    align-items: center;
+}
+.content-wrap .best-item .view:hover {
+    color: #c9c9c9;
+    transition: all .3s ease-out;
+}
+.content-wrap .best-item .view a { 
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: 35px;
+}
+.content-wrap .issue-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 30px 0;
+    text-align: start;
+
+}
+.content-wrap .issue-wrap .issue img {
+    width: 100%;
+}
+.content-wrap .issue-wrap .issue h1 {
+    font-size: 1.6rem;
+    margin: 15px 0 11px 0;
+}
+.content-wrap .issue-wrap .issue p {
+    color: gray;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.banner {
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 4rem;
+    align-items: center;
+}
+.banner .left {
+    text-align: left;
+    margin-right: 20px;
+}
+.banner .left h1 {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+    word-break: keep-all;
+}
+.banner .left p {
+    color: gray;
+    font-size: 1rem;
+    margin: 15px 0;
+    word-break: keep-all;
+}
+.banner .left a {
+    border: 1px solid gray;
+    font-size: 0.8rem;
+    padding: 7px 9px;
+    background-color: white;
+    display: inline-block;
+    
+}
+.banner .right {
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner .right .item {
+    background-color: white;
+    width:calc(50% - 10px);
+    padding: 15px 10px;
+    box-sizing: border-box;
+}
+.banner .right .item img {
+    width: 30px;
+    display: block;
+    margin: 0 auto;
+}
+.banner .right .item p {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.banner .right .item {
+    font-weight: 500;
+}
+.banner .right .item:nth-child(-n+2) {
+    margin-bottom: 20px;
+}
+.banner .right .item:nth-child(odd) {
+    margin-right: 20px;
+}
+/* footer */
+footer {
+    width: 100%;
+    background-color: rgb(246, 244, 244);
+    border-top: 1px solid black;
+}
+footer .footer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 150px;
+}
+footer .footer-wrap .area .company{
+    width: 160px;
+    margin-bottom: 8px;
+}
+footer .footer-wrap .area p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+footer .footer-wrap .area span {
+    font-size: 0.6rem;
+}
+footer .footer-wrap .area:nth-child(-n+3){
+    margin-right: 25px;
+}
+footer .footer-wrap .area ul li {
+    font-size: 0.7rem;
+    font-weight: 400;
+    line-height: 20px;
+}
+footer .footer-wrap .area .sns img {
+    width: 30px;
+}
+@media screen and (max-width: 1280px) {
+    .visual-wrap .visual-img01 {
+        background: url(https://www.hilightbrands-kodak.co.kr/KODAK/25SS/promotion/0418_kids/main_m.jpg)no-repeat center;
+        background-size: cover;
+    }
+    .visual-wrap .visual-img02 {
+        background: url(https://www.hilightbrands-kodak.co.kr/KODAK/25SS/promotion/0321_KIM/main_m_2.jpg)no-repeat center;
+        background-size: cover;
+    }
+    .visual-wrap .visual-img03 {
+        background: url(https://www.hilightbrands-kodak.co.kr/KODAK/25SS/promotion/0411_breeze/main_m.jpg?v2)no-repeat center;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 960px) {
+    body,html { font-size: 14px;}
+
+    .header-mobile {
+        display: block;
+    }
+    header .header-wrap {
+        display: none;
+    }
+    .upbtn {
+        width: 35px;
+        height: 35px;
+        font-size: 0.7rem;
+    }
+    .best .swiper-button-prev, .best .swiper-button-next {
+        display: none;
+    }
+
+    .content-wrap .issue-wrap {
+        grid-template-columns: 1fr;
+    }
+    .banner {
+        flex-direction: column;
+        padding: 4rem 2rem;
+    }
+    .banner .left {
+        width: 100%;
+        margin-bottom: 50px;
+        text-align: center;
+        margin-right: 0;
+    }
+    .banner .right {
+        width: 100%;
+    }
+    footer .footer-wrap {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body,html { font-size: 13px;}
+
+
+}
