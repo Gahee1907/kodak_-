@@ -69,10 +69,15 @@ html.open {
     font-size: 40px;
     position: absolute;
     left: 10px;
-    top: 0px;
+    top: 10px;
     z-index: 1;
     cursor: pointer;
     color: white;
+    background-color: #222222;
+    width: 35px;
+    height: 36px;
+    line-height: 26px;
+    border-radius: 3px;
 }
   
 .close {
@@ -161,6 +166,7 @@ html.open {
     color:black; 
     font-weight:bold; 
     text-decoration:none;
+    font-size: 1.2rem;
 }
       
 #menu ul.nav li a:hover {
@@ -358,9 +364,23 @@ footer {
 }
 footer .footer-wrap {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 50px 150px;
+    padding: 40px 50px;
 }
+footer .footer-wrap .area-1 {
+    width: 40%;
+}
+footer .footer-wrap .area-2 {
+    width: 10%;
+}
+footer .footer-wrap .area-3 {
+    width: 15%;
+}
+footer .footer-wrap .area-4 {
+    width: 20%;
+}
+
 footer .footer-wrap .area .company{
     width: 160px;
     margin-bottom: 8px;
@@ -433,7 +453,26 @@ footer .footer-wrap .area .sns img {
         width: 100%;
     }
     footer .footer-wrap {
-        flex-direction: column;
+        padding: 20px 30px;
+    }
+    footer .footer-wrap .area:nth-child(-n+3){
+    margin-right: 0;
+    }
+    footer .footer-wrap .area {
+        padding: 15px 0;
+    }
+    footer .footer-wrap .area-1{
+        width: 100%;
+        border-bottom: 1px solid lightgray;
+    }
+    footer .footer-wrap .area-2{
+        width: 50%;
+    }
+    footer .footer-wrap .area-3{
+        width: 50%;
+    }
+    footer .footer-wrap .area-4{
+        width: 100%;
     }
 }
 
